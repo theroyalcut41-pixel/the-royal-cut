@@ -127,3 +127,159 @@ transition:.3s;
 transform:scale(1.08);
 background:white;
 }
+/* ===== SERVICES ===== */
+
+section{
+padding:80px 8%;
+}
+
+section h2{
+text-align:center;
+color:gold;
+font-size:38px;
+margin-bottom:40px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:#111;
+border:1px solid rgba(255,215,0,.3);
+padding:30px;
+border-radius:18px;
+text-align:center;
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+border-color:gold;
+box-shadow:0 0 25px rgba(255,215,0,.4);
+}
+
+/* ===== GALLERY ===== */
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+height:260px;
+object-fit:cover;
+border-radius:15px;
+border:2px solid gold;
+transition:.4s;
+}
+
+.gallery img:hover{
+transform:scale(1.05);
+}
+
+/* ===== CONTACT ===== */
+
+#contact{
+text-align:center;
+}
+
+#contact p{
+margin:15px 0;
+}
+
+/* ===== FLOATING WHATSAPP ===== */
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+width:65px;
+height:65px;
+background:#25D366;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:34px;
+color:white;
+text-decoration:none;
+box-shadow:0 0 20px rgba(0,0,0,.4);
+animation:bounce 2s infinite;
+}
+
+@keyframes bounce{
+0%,100%{transform:translateY(0);}
+50%{transform:translateY(-10px);}
+}
+
+/* ===== FLOATING ICONS ===== */
+
+.floating-icons i{
+position:absolute;
+font-size:28px;
+color:rgba(255,215,0,.25);
+animation:float 8s linear infinite;
+}
+
+.floating-icons i:nth-child(1){
+top:20%;
+left:10%;
+}
+
+.floating-icons i:nth-child(2){
+top:70%;
+left:15%;
+}
+
+.floating-icons i:nth-child(3){
+top:30%;
+right:10%;
+}
+
+.floating-icons i:nth-child(4){
+top:75%;
+right:15%;
+}
+
+@keyframes float{
+0%{
+transform:translateY(0) rotate(0deg);
+}
+50%{
+transform:translateY(-30px) rotate(180deg);
+}
+100%{
+transform:translateY(0) rotate(360deg);
+}
+}
+
+/* ===== MOBILE ===== */
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+}
+
+nav{
+margin-top:15px;
+}
+
+nav a{
+display:block;
+margin:10px 0;
+}
+
+.hero h2{
+font-size:34px;
+}
+
+.hero p{
+font-size:16px;
+}
+  }
