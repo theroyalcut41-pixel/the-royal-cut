@@ -1,1 +1,4 @@
+User-agent: *
+Allow: /
 
+Sitemap: https://theroyalcut41-pixel.github.io/the-royal-cut/sitemap.xml
